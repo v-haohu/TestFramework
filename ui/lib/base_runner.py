@@ -6,7 +6,7 @@ import unittest
 import warnings
 import logging
 from common.lib.base_config import UI_OUTPUT_DIR
-
+# from datetime import datetime
 
 class BaseAppTestCase(unittest.TestCase):
     driver = None
@@ -64,6 +64,8 @@ class BaseWebTestCase(unittest.TestCase):
 
     def save_img(self, img_name):
         if self.driver is not None:
+            # nowtime = datetime.now().strftime('%Y%m%d')
+            # img_name = nowtime.now + img_name + ".png"
             img_path = os.path.join(self.screenshot_dir, '{}.png'.format(img_name))
             if os.path.exists(img_path):
                 os.remove(img_path)
