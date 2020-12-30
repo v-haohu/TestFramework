@@ -15,4 +15,5 @@ class manageuserspage:
     user_account = (By.XPATH, '/html/body/div[1]/div/div[2]/admin-setting-detail/div/section/div/div[2]/personal-data/div/div[2]/div[2]/principal-group-search/div/div[2]/div/ul/li[1]/div/div[2]')
     get_report_button = (By.XPATH, '//button[@class= "stream-btn btn-primary get-report-button ng-binding"]')
     #download_button = (By.ID, 'icon_download')
+    get_report_status = (By.XPATH, '/html/body/div[1]/div/div[2]/admin-setting-detail/div/section/div/div[2]/personal-data/div/personal-data-users-list/div/items-list/div/div[1]/div[1]/item/personal-data-principal-item/principal-item-base/div/list-row/ng-transclude/list-cell[4]/div/div/ng-transclude/ng-transclude/custom-column2/span')
     download_button = (By.XPATH, '//div[contains(@infinite-scroll-container, "window")]/div[1]/item/personal-data-principal-item/principal-item-base/div/list-row/ng-transclude/list-cell[6]/div/div/ng-transclude/ng-transclude/custom-column4/a')

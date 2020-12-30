@@ -44,3 +44,9 @@ class manage_user_data_business(BusinessWebPage):
 
     def download(self):
         self.click(self._page.download_button)
+        
+    def get_search_input_user_account(self):
+        return self.is_element_present(self._page.user_account)
+
+    def get_report_status(self):
+        return self.is_element_present(self._page.get_report_status)
